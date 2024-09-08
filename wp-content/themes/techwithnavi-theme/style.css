@@ -1,0 +1,206 @@
+/*
+Theme Name: Techwithnavi Theme
+Theme URI: https://techwithnavi.com/
+Author: Naveen
+Author URI: http://example.com
+Description: A minimal, lightweight, and customizable WordPress theme similar to Hello Elementor.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: techwithnavi.com
+*/
+
+
+	html.pum-open.pum-open-overlay.pum-open-scrollable body > [aria-hidden] {
+		padding-right: 0px !important;
+	}
+body {
+    font-family: Inter, sans-serif;
+    line-height: 1.6;
+	margin:0;
+}
+body{
+	overflow-x:hidden;
+}
+.site-header {
+    background: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.site-main {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+p.elementor-counter-title {
+    text-align: center;
+}
+.profile-footer {
+    border-top: 1px dashed #cccc;
+    padding-top: 40px;
+}
+
+
+.profile-card .profile-header {
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    border-width: 15px 15px 15px 15px;
+    border-color: #EDF4FF;
+    background-color: #EDF4FF;
+    border-radius: 10px;
+}
+
+
+.pum-container .pum-content+.pum-close {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+button#wpforms-submit-24 {
+    background: #00AE75 !important;
+    font-size: 15px;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    height: auto;
+    line-height: normal;
+}
+
+.wpforms-container .wpforms-field label {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+
+.pum-theme-default-theme #popmake-296.pum-container {
+    padding: 0;
+	background: transparent;
+}
+
+
+.pum-theme-default-theme #popmake-296.pum-container iframe {
+    border-radius: 10px;
+}
+
+
+/***************************\
+   PACKAGE SWITCH CSS
+\***************************/
+
+/* Container for switches */
+.toggle-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Toggle switch structure */
+.toggle-switch {
+     display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    flex-direction: row-reverse;
+    cursor:pointer;
+}
+
+/* Style the switch itself */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left:0px;
+    bottom: -2px;
+    background-color: white;
+    transition: 0.4s;
+	border:1px solid #ccc;
+}
+
+/* Green background for active switch (Annual) */
+.toggle-switch.active-switch input:checked + .slider {
+    background: #46c89d;
+}
+
+/* Move the slider when checked */
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+/* Round slider */
+.slider.round {
+    border-radius: 34px;
+}
+
+/* Active Label Styling */
+
+.toggle-switch.active-switch {    
+    background: #00AE75;
+	border-color: #00AE75;
+}
+
+.toggle-switch.active-switch .label{
+	color: #ffffff;
+}
+
+.toggle-switch .label {
+    color: #2C333C;
+}
+
+/* Active style for "Monthly" when checked */
+input:checked ~ .label {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Inactive style for the other */
+input:not(:checked) ~ .label {
+    color: #ccc;
+    font-weight: normal;
+}
+html.pum-open.pum-open-overlay, html.pum-open.pum-open-overlay.pum-open-fixed .pum-overlay {
+    overflow: auto!important;
+}
+html.pum-open.pum-open-overlay.pum-open-scrollable body>:not([aria-modal=true]){padding:0px!important;}
