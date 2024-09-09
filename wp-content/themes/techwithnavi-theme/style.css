@@ -1,6 +1,6 @@
 /*
 Theme Name: Techwithnavi Theme
-Theme URI: https://techwithnavi.com/
+Theme URI: https://task.techwithnavi.com/
 Author: Naveen
 Author URI: http://example.com
 Description: A minimal, lightweight, and customizable WordPress theme similar to Hello Elementor.
@@ -203,4 +203,18 @@ input:not(:checked) ~ .label {
 html.pum-open.pum-open-overlay, html.pum-open.pum-open-overlay.pum-open-fixed .pum-overlay {
     overflow: auto!important;
 }
-html.pum-open.pum-open-overlay.pum-open-scrollable body>:not([aria-modal=true]){padding:0px!important;}
+html.pum-open.pum-open-overlay.pum-open-scrollable body>:not([aria-modal=true]){padding:0px!important;
+}
+
+@media only screen and (max-width: 600px) {
+  /* remove overlay color*/
+.elementskit-menu-overlay{
+          background: transparent!important;
+}
+
+.pum-theme-default-theme #popmake-296.pum-container{     left: 1% !important;
+    width: 95%;
+}
+.pum-theme-default-theme #popmake-296.pum-container iframe{width:100%;}
+.pum-theme-238 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close{right: -8px!important;}
+}
