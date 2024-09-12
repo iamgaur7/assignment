@@ -68,25 +68,3 @@ function themeScript() {
     wp_enqueue_script('theme-script', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'themeScript');
-
-function headerScript(){ ?>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q157WLMPQL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Q157WLMPQL');
-
-<!-- Google Tag Manager -->
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KMCVDT6C');</script>
-<!-- End Google Tag Manager -->
-
-<?php }
-
-add_action('wp_head','headerScript');
